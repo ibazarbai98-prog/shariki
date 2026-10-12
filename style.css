@@ -1,0 +1,68 @@
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.shariki {
+    display: flex;
+}
+
+.shar {
+    width: 32px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue-red {
+    background: linear-gradient(to right, blue, red);
+}
+
+.right {
+    animation: right 3s infinite;
+}
+
+.left {
+    animation: left 3s infinite;
+}
+
+@keyframes right {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(100px, -50px);
+    }
+
+    40%, 100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes left {
+    0%, 40% {
+        transform: translate(0, 0);
+    }
+
+    60% {
+        transform: translate(-100px, -50px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
